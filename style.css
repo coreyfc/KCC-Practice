@@ -1,0 +1,78 @@
+/* Navigation starts here*/
+
+ul{
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+}
+
+/* CSS Rule for Main Navigation List Items*/
+
+ul li{
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background-color: #1c1a54;
+}
+
+/* CSS Rule for Hover of Main Navigation List Items*/
+
+ul li:hover{
+  background: rgb(245,182,25);
+  }
+  
+/* CSS Rule for Link States of Main Navigation List Items*/
+
+a:link{color:#FFFFFF} /* unvisited link */
+a:visited{color:#FFFFFF} /* visited link */
+a:hover{color:#1c1a54} /* mouse over link */
+a:active{color:#FFFFFF} /* selected link */
+
+/* CSS Rule for Hyper-links*/
+
+a{
+text-decoration: none;
+}
+
+ul li ul{
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 183px;
+  display: none;
+  visibility: hidden;
+  z-index: 1; /* for overlapping divs, bringing to the front like a drop down menu*/
+}
+
+/* CSS Rules for Drop-down List Menu Items*/
+
+ul li ul li{
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1c1a54;
+  background: rgb(245,182,25);
+  display: block;
+  color: #fff;
+}
+
+ul li ul li:hover{ background: #85b7ec;}
+
+ul li:hover ul{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Navigation ends here*/
+
+#overlay{
+	position: absolute;
+	top: 0;
